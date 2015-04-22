@@ -10,6 +10,8 @@ all:
 	gcc -DGHTTP_MAJOR_VERSION=1 -DGHTTP_MINOR_VERSION=0 -DGHTTP_MICRO_VERSION=9 -DPACKAGE=\"libghttp\" -DVERSION=\"1.0.9\" -DSTDC_HEADERS=1 -I. -I. -g -O2 -c http_base64.c -o http_base64.o >/dev/null 2>&1
 	ar cru libghttp.a  ghttp.o http_date.o http_hdrs.o http_req.o http_resp.o http_trans.o http_uri.o http_base64.o
 	ranlib libghttp.a
+	cp libghttp.a  ./lib/
+	cp ghttp.h ghttp_constants.h ./lib/include/
 
 clean:
 	rm *.o *.a

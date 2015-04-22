@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "ghttp.h"
-
-//A simple example from doc/ghttp.html
-//int main()
+#include "http_request.h"
 
 ghttp_request *init_request()
 {

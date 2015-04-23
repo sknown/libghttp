@@ -1,0 +1,1 @@
+gcc -o test test.c http_request.h ./librequestsend.so ./libghttp.a

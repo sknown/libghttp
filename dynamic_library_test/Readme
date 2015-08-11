@@ -1,0 +1,20 @@
+Range of mothod value:
+
+typedef enum ghttp_type_tag
+{               
+  ghttp_type_get = 0,
+  ghttp_type_options,
+  ghttp_type_head,
+  ghttp_type_post,
+  ghttp_type_put,
+  ghttp_type_delete, 
+  ghttp_type_trace,
+  ghttp_type_connect,
+  ghttp_type_propfind,
+  ghttp_type_proppatch,
+  ghttp_type_mkcol,
+  ghttp_type_copy,
+  ghttp_type_move,
+  ghttp_type_lock,
+  ghttp_type_unlock
+} ghttp_type;
